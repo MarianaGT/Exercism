@@ -1,6 +1,7 @@
 class ResistorColor
-  def self.color_code(index)
-    colors = %w(black brown red orange yellow green blue violet grey white)
-    colors[index]
+  colors = %w(black brown red orange yellow green blue violet grey white)
+
+  def self.color_code(color)
+    colors.index(color)
   end
 end
