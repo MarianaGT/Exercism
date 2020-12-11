@@ -7,3 +7,8 @@ function getFirstValue(arr) {
 function addition(a, b) {
   return a + b;
 }
+
+//Write a function that converts hours into seconds.
+function howManySeconds(hours) {
+  return hours * 3600;
+}
