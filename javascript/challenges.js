@@ -89,3 +89,7 @@ Return 0 if given an empty array.*/
 function countTrue(arr) {
   return arr.filter(element => element).length;
 }
+
+function countTrue(arr) {
+  return arr.filter(Boolean).length;
+}
