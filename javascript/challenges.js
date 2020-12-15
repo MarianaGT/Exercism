@@ -93,3 +93,8 @@ function countTrue(arr) {
 function countTrue(arr) {
   return arr.filter(Boolean).length;
 }
+
+/* Create a function that will take a HEX number and returns the binary equivalent (as a string).*/
+function toBinary(num) {
+  return (num >>> 0).toString(2);
+}
