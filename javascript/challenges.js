@@ -116,3 +116,6 @@ while (count <= 10) {
   count += 1;
 }
 console.log(total);
+
+// Basic counter with sum and range
+console.log(sum(range(1, 10)));
