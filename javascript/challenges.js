@@ -108,3 +108,11 @@ function canNest(arr1, arr2) {
     : Math.max(arr1) < Math.max(arr2) ? true
     : false
 }
+
+// Basic counter
+let total = 0, count = 1;
+while (count <= 10) {
+  total += count;
+  count += 1;
+}
+console.log(total);
