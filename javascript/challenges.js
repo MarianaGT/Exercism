@@ -127,7 +127,7 @@ console.log(sum(range(1, 10)));
 //typeof operator > returns your type of value (unary operator)
 console.log(typeof 4.5) → number
 
-// Odd JavaScript behaviour with “wrong” type of values
+// Odd JavaScript behaviour with “wrong” types of values > type coercion
 console.log(8 * null) → 0
 console.log("5" - 1) → 4
 console.log("5" + 1) → 51
