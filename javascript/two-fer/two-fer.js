@@ -3,7 +3,7 @@
 // convenience to get you started writing code faster.
 //
 
-export const twoFer = () => {
+export const twoFer = (name) => {
   if (name) {
       return `One for ${name}, one for me.`;
     } else {
