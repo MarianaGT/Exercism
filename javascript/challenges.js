@@ -136,3 +136,6 @@ console.log(false == 0) → true
 
 // Test whether a value has a real value instead of null or undefined
 console.log(null == 0); → false
+
+// fall back on a default value
+console.log(null || "user") → user
