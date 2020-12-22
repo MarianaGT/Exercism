@@ -123,3 +123,7 @@ console.log(sum(range(1, 10)));
 //Escaping the character and template literal with backtick-quoted strings
 `This is the first line\nAnd this is the second`
 `half of 100 is ${100 / 2}`
+
+//typeof operator > returns your type of value (unary operator)
+console.log(typeof 4.5)
+// → number
