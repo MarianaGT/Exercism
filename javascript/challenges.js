@@ -119,3 +119,6 @@ console.log(total);
 
 // Basic counter with sum and range
 console.log(sum(range(1, 10)));
+
+//Escaping the character
+"This is the first line\nAnd this is the second"
