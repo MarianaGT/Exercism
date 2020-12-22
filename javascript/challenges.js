@@ -125,5 +125,11 @@ console.log(sum(range(1, 10)));
 `half of 100 is ${100 / 2}`
 
 //typeof operator > returns your type of value (unary operator)
-console.log(typeof 4.5)
-// → number
+console.log(typeof 4.5) → number
+
+// Odd JavaScript behaviour with “wrong” type of values
+console.log(8 * null) → 0
+console.log("5" - 1) → 4
+console.log("5" + 1) → 51
+console.log("five" * 2) → NaN
+console.log(false == 0) → true
