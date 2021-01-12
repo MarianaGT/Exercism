@@ -139,3 +139,8 @@ console.log(null == 0); → false
 
 // fall back on a default value
 console.log(null || "user") → user
+
+// Multiple bindings or variables in one statement
+let one = 1, two = 2;
+console.log(one + two);
+// → 3
