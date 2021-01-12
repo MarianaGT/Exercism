@@ -169,3 +169,10 @@ if (num < 10) {
 } else {
   console.log("Large");
 }
+
+// Calculate all even numbers up to 12 with a 'while' loop
+let number = 0;
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
+}
