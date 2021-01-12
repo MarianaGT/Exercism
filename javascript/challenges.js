@@ -224,3 +224,18 @@ for (let current = 20; ; current += 1) {
 }
 
 // For counter += 1 and counter -= 1, there are even shorter equivalents: counter++ and counter--.
+
+// Switch construct
+switch (prompt("What is the weather like?")) {
+  case "rainy":
+    console.log("Remember to bring an umbrella.");
+    break;
+  case "sunny":
+    console.log("Dress lightly.");
+  case "cloudy":
+    console.log("Go outside.");
+    break;
+  default:
+    console.log("Unknown weather type!");
+    break;
+}
