@@ -239,3 +239,9 @@ switch (prompt("What is the weather like?")) {
     console.log("Unknown weather type!");
     break;
 }
+
+// Write a loop that makes seven calls to console.log to output the following triangle:
+let result = '#';
+for (let counter = 0; counter < 7; counter += 1) {
+  console.log(result); result += '#';
+}
