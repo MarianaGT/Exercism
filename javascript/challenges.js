@@ -211,3 +211,14 @@ do {
   yourName = prompt("Who are you?");
 } while (!yourName);
 console.log(yourName);
+
+/* This program illustrates the break statement. It finds the first number that is
+both greater than or equal to 20 and divisible by 7. The for construct in the example
+does not have a part that checks for the end of the loop. This means that the loop
+will never stop unless the break statement inside is executed.*/
+for (let current = 20; ; current = current + 1) {
+  if (current % 7 == 0) {
+    console.log(current);
+    break;
+  }
+}
