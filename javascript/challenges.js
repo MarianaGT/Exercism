@@ -176,3 +176,11 @@ while (number <= 12) {
   console.log(number);
   number = number + 2;
 }
+
+// Calculate and show the value of 2 to the 10th power
+let result = 1;
+let counter = 0;
+while (counter < 10) {
+  result = result * 2;
+  counter = counter + 1;
+}
