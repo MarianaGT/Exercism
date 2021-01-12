@@ -216,9 +216,11 @@ console.log(yourName);
 both greater than or equal to 20 and divisible by 7. The for construct in the example
 does not have a part that checks for the end of the loop. This means that the loop
 will never stop unless the break statement inside is executed.*/
-for (let current = 20; ; current = current + 1) {
+for (let current = 20; ; current += 1) {
   if (current % 7 == 0) {
     console.log(current);
     break;
   }
 }
+
+// For counter += 1 and counter -= 1, there are even shorter equivalents: counter++ and counter--.
