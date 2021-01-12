@@ -177,7 +177,17 @@ while (number <= 12) {
   number = number + 2;
 }
 
-// Calculate and show the value of 2 to the 10th power
+/* This program is exactly equivalent to the earlier even-number-printing example.
+The only change is that all the statements that are related to the “state” of the
+loop are grouped together after for.
+The part before the first semicolon initializes the loop, usually by defining a binding.
+The second part is the expression that checks whether the loop must continue.
+The final part updates the state of the loop after every iteration.*/
+for (let number = 0; number <= 12; number = number + 2) {
+  console.log(number);
+}
+
+// Calculate and show the value of 2 to the 10th power with a 'while' loop
 let result = 1;
 let counter = 0;
 while (counter < 10) {
@@ -185,12 +195,12 @@ while (counter < 10) {
   counter = counter + 1;
 }
 
-/* This program is exactly equivalent to the earlier even-number-printing example.
-The only change is that all the statements that are related to the “state” of the
-loop are grouped together after for*/
-for (let number = 0; number <= 12; number = number + 2) {
-  console.log(number);
+// Calculate and show the value of 2 to the 10th power with a 'for' loop
+let result = 1;
+for (let counter = 0; counter < 10; counter = counter + 1) {
+  result = result * 2;
 }
+console.log(result);
 
 /* This program will force you to enter a name. It will ask again and again until
 it gets something that is not an empty string. Applying the ! operator will convert
