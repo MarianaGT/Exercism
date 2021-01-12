@@ -185,6 +185,13 @@ while (counter < 10) {
   counter = counter + 1;
 }
 
+/* This program is exactly equivalent to the earlier even-number-printing example.
+The only change is that all the statements that are related to the “state” of the
+loop are grouped together after for*/
+for (let number = 0; number <= 12; number = number + 2) {
+  console.log(number);
+}
+
 /* This program will force you to enter a name. It will ask again and again until
 it gets something that is not an empty string. Applying the ! operator will convert
 a value to Boolean type before negating it, and all strings except "" convert to
