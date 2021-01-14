@@ -274,3 +274,10 @@ let size = 8
 for (let counter = 0; counter < size; counter += 1) {
   console.log(grid.repeat(size/2));
 }
+
+let size = 8
+let grid = size * size
+
+for (let chars = "ab"; chars.length > size/2; chars + "\n") {
+   console.log(chars.repeat(grid));
+}
