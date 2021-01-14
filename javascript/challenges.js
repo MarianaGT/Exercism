@@ -269,7 +269,8 @@ for (let num = 1; num <= 100; num += 1) {
 characters to separate lines. At each position of the grid there is either a space
 or a "#" character. The characters should form a chessboard.
 Passing this string to console.log should show something like this: */
-let grid = '' + '#';
-for (let size = 0; size < 8; size += 1) {
-  console.log(grid * 4);
+let grid = ' #';
+let size = 8
+for (let counter = 0; counter < size; counter += 1) {
+  console.log(grid * size);
 }
