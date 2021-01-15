@@ -336,3 +336,11 @@ function egg() {
   return chicken();
 }
 console.log(chicken() + " came first."); // → ??
+
+// Broad-minded arguments (optional or default parameters)
+function minus(a, b) {
+  if (b === undefined) return -a;
+  else return a - b;
+}
+console.log(minus(10)); // → -10
+console.log(minus(10, 5)); // → 5
