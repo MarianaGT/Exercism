@@ -285,3 +285,8 @@ if (result.length > size) {
 }
 console.log(result);
 
+
+let size = 8
+for (let grid = " " + "#"; grid.length > size; grid + "\n") {
+  console.log(grid.repeat(size * size));
+}
