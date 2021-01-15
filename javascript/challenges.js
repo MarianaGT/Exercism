@@ -296,7 +296,7 @@ console.log(result);
 
 
 let size = 8
-for (let grid = " " + "#"; grid.length > size; grid + "\n") {
+for (let grid = " " + "#"; grid.length > size; grid = "\n" + grid) {
   console.log(grid.repeat(size * size));
 }
 
@@ -312,13 +312,18 @@ function future() {
   return "You'll never have flying cars";
 }
 
-//Arrow function syntax examples
+//Arrow function syntax examples:
+// 1. Define variable or binding to hold a function value
 const power = (base, exponent) => {
   let result = 1;
   for (let count = 0; count < exponent; count++) {
     result *= base;
   }
   return result;
+};
+
+const f = function(a) {
+  console.log(a + 2);
 };
 
 const square1 = (x) => { return x * x; };
@@ -328,7 +333,14 @@ const horn = () => {
   console.log("Toot");
 };
 
-// The call stack (available memory to store the call memory), out of stack space, blow the stack
+let h = a => a % 3;
+
+// 2. Declare a function
+function g(a, b) {
+  return a * b * 3.5;
+}
+
+// The call stack (available memory to store the call memory), out of stack space, blow the stack, stack overflow
 function chicken() {
   return egg();
 }
@@ -344,3 +356,8 @@ function minus(a, b) {
 }
 console.log(minus(10)); // → -10
 console.log(minus(10, 5)); // → 5
+
+// Write a function min that takes two arguments and returns their minimum.
+function min(a,b) {
+  return Math.min(a,b);
+}
