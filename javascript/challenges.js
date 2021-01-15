@@ -327,3 +327,12 @@ const square2 = x => x * x;
 const horn = () => {
   console.log("Toot");
 };
+
+// The call stack (available memory to store the call memory), out of stack space, blow the stack
+function chicken() {
+  return egg();
+}
+function egg() {
+  return chicken();
+}
+console.log(chicken() + " came first."); // → ??
