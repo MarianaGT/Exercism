@@ -361,3 +361,9 @@ console.log(minus(10, 5)); // → 5
 function min(a,b) {
   return Math.min(a,b);
 }
+
+// Write a function to test if numbers are even or odd
+function isEven(num) {
+  return num % 2 == 0 ? true
+    : false
+}
