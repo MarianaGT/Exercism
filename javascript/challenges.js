@@ -383,3 +383,12 @@ sequence.push(5);
 console.log(sequence); // → [1, 2, 3, 4, 5]
 console.log(sequence.pop()); // → 5
 console.log(sequence); // → [1, 2, 3, 4]
+
+
+/* To find out what properties an object has, you can use the Object.keys function.
+You give it an object, and it returns an array of strings—the object’s property names.
+*/
+console.log(Object.keys({x: 0, y: 0, z: 2})); // → ["x", "y", "z"]
+
+// There’s an Object.assign function that copies all properties from one object into another.
+
