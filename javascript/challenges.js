@@ -391,4 +391,6 @@ You give it an object, and it returns an array of strings—the object’s prope
 console.log(Object.keys({x: 0, y: 0, z: 2})); // → ["x", "y", "z"]
 
 // There’s an Object.assign function that copies all properties from one object into another.
-
+let objectA = {a: 1, b: 2};
+Object.assign(objectA, {b: 3, c: 4});
+console.log(objectA); // → {a: 1, b: 3, c: 4}
