@@ -367,3 +367,9 @@ function isEven(num) {
   return num % 2 == 0 ? true
     : false
 }
+
+/* Write a function countBs that takes a string as its only argument and returns
+a number that indicates how many uppercase “B” characters there are in the string.*/
+function countBs(string) {
+  return string.match(/B/g).length;
+}
