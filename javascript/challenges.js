@@ -499,3 +499,15 @@ console.log(remove(["a", "b", "c", "d", "e"], 2));
 
 console.log("  okay \n ".trim()); // → okay
 console.log(String(6).padStart(3, "0")); // → 006
+
+// Split, join & repeat methods in strings
+
+let sentence = "Secretarybirds specialize in stomping";
+let words = sentence.split(" ");
+console.log(words);
+// → ["Secretarybirds", "specialize", "in", "stomping"]
+console.log(words.join(". "));
+// → Secretarybirds. specialize. in. stomping
+
+console.log("LA".repeat(3));
+// → LALALA
