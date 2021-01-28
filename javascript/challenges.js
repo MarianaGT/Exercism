@@ -481,3 +481,16 @@ console.log([0, 1, 2, 3, 4].slice(2, 4));
 // → [2, 3]
 console.log([0, 1, 2, 3, 4].slice(2));
 // → [2, 3, 4]
+
+/* The concat method can be used to glue arrays together to create a new array,
+similar to what the + operator does for strings.
+If you pass concat an argument that is not an array, that value will be added to
+the new array as if it were a one-element array.
+*/
+
+function remove(array, index) {
+  return array.slice(0, index)
+    .concat(array.slice(index + 1));
+}
+console.log(remove(["a", "b", "c", "d", "e"], 2));
+// → ["a", "b", "d", "e"]
