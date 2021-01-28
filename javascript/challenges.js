@@ -494,3 +494,8 @@ function remove(array, index) {
 }
 console.log(remove(["a", "b", "c", "d", "e"], 2));
 // → ["a", "b", "d", "e"]
+
+// Trim and padStart methods
+
+console.log("  okay \n ".trim()); // → okay
+console.log(String(6).padStart(3, "0")); // → 006
