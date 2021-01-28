@@ -440,3 +440,19 @@ for (let i = 0; i < JOURNAL.length; i++) {
 for (let entry of JOURNAL) {
   console.log(`${entry.events.length} events.`);
 }
+
+/* Push and pop, add and remove elements at the end of an array.
+The corresponding methods for adding and removing things at the start of an array
+are called unshift and shift.
+*/
+
+let todoList = [];
+function remember(task) {
+  todoList.push(task);
+}
+function getTask() {
+  return todoList.shift();
+}
+function rememberUrgently(task) {
+  todoList.unshift(task);
+}
