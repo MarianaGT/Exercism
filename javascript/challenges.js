@@ -424,3 +424,19 @@ function tableFor(event, journal) {
   }
   return table;
 }
+
+/* This kind of loop is common in classical JavaScript—going over arrays one
+element at a time is something that comes up a lot, and to do that you’d run a
+counter over the length of the array and pick out each element in turn.
+*/
+
+for (let i = 0; i < JOURNAL.length; i++) {
+  let entry = JOURNAL[i];
+  // Do something with entry
+}
+
+//There is a simpler way to write such loops in modern JavaScript
+
+for (let entry of JOURNAL) {
+  console.log(`${entry.events.length} events.`);
+}
