@@ -469,3 +469,15 @@ console.log([1, 2, 3, 2, 1].indexOf(2));
 // → 1
 console.log([1, 2, 3, 2, 1].lastIndexOf(2));
 // → 3
+
+/* Another fundamental array method is slice, which takes start and end indices
+and returns an array that has only the elements between them. The start index is
+inclusive, the end index exclusive.
+When the end index is not given, slice will take all of the elements after the start
+index. You can also omit the start index to copy the entire array.
+*/
+
+console.log([0, 1, 2, 3, 4].slice(2, 4));
+// → [2, 3]
+console.log([0, 1, 2, 3, 4].slice(2));
+// → [2, 3, 4]
